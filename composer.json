@@ -1,0 +1,23 @@
+{
+    "name": "aoharudev/laravel-repository",
+    "description": "Laravel Library to Perform Repository Pattern With DB Query",
+    "version": "0.0.1",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aoharudev\\LaravelRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Asteria Osamu",
+            "email": "asteria.osamu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^11.14",
+        "php": "^8.1"
+    }
+}
