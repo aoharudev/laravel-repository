@@ -147,11 +147,11 @@ trait RepositoryBuilder
     /**
      * Get current database connection name
      *
-     * @return string
+     * @return string|null
      */
-    public function getConnectionName(): string
+    public function getConnectionName(): ?string
     {
-        return $this->connection_name;
+        return $this->connection_name ?? null;
     }
 
     /**

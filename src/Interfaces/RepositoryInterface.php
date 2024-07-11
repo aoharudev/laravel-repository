@@ -72,9 +72,9 @@ interface RepositoryInterface
     /**
      * Get current database connection name
      *
-     * @return string
+     * @return string|null
      */
-    public function getConnectionName(): string;
+    public function getConnectionName(): ?string;
 
     /**
      * Set table name to used in this repository

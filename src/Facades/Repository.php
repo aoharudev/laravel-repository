@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Facade;
  * @method static static|Collection update(array $updated_data = [], array $where = [], bool $return_data = true, bool $force_empty_where = false)
  * @method static static|Collection create(array $data = [], bool $return_data = true)
  * @method static static setConnectionName(string $connection_name)
- * @method static string getConnectionName()
+ * @method static null|string getConnectionName()
  * @method static static setTableName(string $table_name)
- * @method static string getTableName()
- * @method static ConnectionInterface getConnection()
+ * @method static null|string getTableName()
+ * @method static null|ConnectionInterface getConnection()
  * @method static static createBuilder(?string $table_name = null, ?string $connection_name = null)
- * @method static Builder getBuilder():
+ * @method static null|Builder getBuilder():
  * @method static static builderShouldCreated()
  * @mixin \Aoharudev\LaravelRepository\Repository
  */
