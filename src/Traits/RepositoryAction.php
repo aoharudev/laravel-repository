@@ -321,10 +321,10 @@ trait RepositoryAction
      *
      * @param array $data
      * @param bool $return_data
-     * @return static|Collection
+     * @return static|stdClass
      * @throws Throwable
      */
-    public function create(array $data = [], bool $return_data = true): static|Collection
+    public function create(array $data = [], bool $return_data = true): static|stdClass
     {
         return $this->builderShouldCreated()->getConnection()->transaction(function () use ($data, $return_data) {
 

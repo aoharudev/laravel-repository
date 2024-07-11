@@ -5,6 +5,7 @@ namespace Aoharudev\LaravelRepository\Interfaces;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Support\Collection;
+use stdClass;
 
 interface RepositoryInterface
 {
@@ -56,9 +57,9 @@ interface RepositoryInterface
      *
      * @param array $data
      * @param bool $return_data
-     * @return static|Collection
+     * @return static|stdClass
      */
-    public function create(array $data = [], bool $return_data = true): static|Collection;
+    public function create(array $data = [], bool $return_data = true): static|stdClass;
 
     /**
      * Set new database connection name and create new
