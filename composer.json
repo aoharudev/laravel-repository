@@ -1,7 +1,6 @@
 {
     "name": "aoharudev/laravel-repository",
     "description": "Laravel Library to Perform Repository Pattern With DB Query",
-    "version": "0.0.1",
     "type": "library",
     "license": "MIT",
     "autoload": {
