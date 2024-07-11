@@ -87,9 +87,9 @@ interface RepositoryInterface
     /**
      * Get used table name for this repository
      *
-     * @return string
+     * @return string|null
      */
-    public function getTableName(): string;
+    public function getTableName(): ?string;
 
     /**
      * Get query database connection instance

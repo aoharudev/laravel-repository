@@ -70,7 +70,7 @@ trait RepositoryBuilder
     public function createBuilder(?string $table_name = null, ?string $connection_name = null): static
     {
         if ($connection_name) $this->setConnectionName($connection_name);
-        if (!$this->getConnection()) $this->setConnectionName($this->getDefaultConnectionName());
+        if (!$this->getConnection()) $this->setConnectionName($this->getConnectionName() ?? $this->getDefaultConnectionName());
 
         if ($table_name) $this->setTableName($table_name);
         if (!$this->getTableName()) $this->setTableName($this->getDefaultTableName());
@@ -109,11 +109,11 @@ trait RepositoryBuilder
     /**
      * Get used table name for this repository
      *
-     * @return string
+     * @return string|null
      */
-    public function getTableName(): string
+    public function getTableName(): ?string
     {
-        return $this->table_name;
+        return $this->table_name ?? null;
     }
 
     /**
