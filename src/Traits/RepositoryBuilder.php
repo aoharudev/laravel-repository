@@ -138,7 +138,10 @@ trait RepositoryBuilder
      */
     protected function getDefaultTableName(): string
     {
-        return strtolower(preg_replace("/([a-z])([A-Z])/", "$1_$2", get_called_class()));
+        $namespace = explode('\\', get_called_class());
+        $table_name = array_pop($namespace);
+
+        return strtolower(preg_replace("/([a-z])([A-Z])/", "$1_$2", $table_name));
     }
 
     /**
