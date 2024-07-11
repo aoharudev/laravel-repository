@@ -53,11 +53,11 @@ trait RepositoryBuilder
     /**
      * Get query builder instance
      *
-     * @return Builder
+     * @return Builder|null
      */
-    public function getBuilder(): Builder
+    public function getBuilder(): ?Builder
     {
-        return $this->builder;
+        return $this->builder ?? null;
     }
 
     /**
@@ -83,11 +83,11 @@ trait RepositoryBuilder
     /**
      * Get query database connection instance
      *
-     * @return ConnectionInterface
+     * @return ConnectionInterface|null
      */
-    public function getConnection(): ConnectionInterface
+    public function getConnection(): ?ConnectionInterface
     {
-        return $this->connection;
+        return $this->connection ?? null;
     }
 
     /**

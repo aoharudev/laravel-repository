@@ -94,9 +94,9 @@ interface RepositoryInterface
     /**
      * Get query database connection instance
      *
-     * @return ConnectionInterface
+     * @return ConnectionInterface|null
      */
-    public function getConnection(): ConnectionInterface;
+    public function getConnection(): ?ConnectionInterface;
 
     /**
      * Create query builder instance
@@ -110,9 +110,9 @@ interface RepositoryInterface
     /**
      * Get query builder instance
      *
-     * @return Builder
+     * @return Builder|null
      */
-    public function getBuilder(): Builder;
+    public function getBuilder(): ?Builder;
 
     /**
      * Check whether the builder is created, if no, then
