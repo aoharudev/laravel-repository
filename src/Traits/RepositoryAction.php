@@ -312,7 +312,7 @@ trait RepositoryAction
     {
         // Todo: Change this with your own default table selects
 
-        return [$this->getTableName() . '*'];
+        return [$this->getTableName() . '.*'];
     }
 
 
