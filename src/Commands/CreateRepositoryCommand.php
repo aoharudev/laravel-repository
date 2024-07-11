@@ -61,7 +61,7 @@ class CreateRepositoryCommand extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace): string
     {
-        return $rootNamespace . '\App\Repository';
+        return $rootNamespace . '\Repository';
     }
 
     /**
